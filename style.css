@@ -489,7 +489,7 @@ button:hover {
 
 .home {
     border-radius: 8px;
-    box-shadow: 1px 2px 8px;
+    box-shadow: 1px 2px 6px yellow;
     display: flex;
     flex-direction: column;
     padding: 80px 0 0;
@@ -529,7 +529,8 @@ button:hover {
 
 .text-content h4 {
     font-size: 35px;
-    margin-left: 30px;
+    margin-left: 80px;
+    color:var(--topic-color);
 }
 
 .top-contact-icons {
@@ -550,7 +551,7 @@ button:hover {
 
 .text-content h1 {
     animation: to-left 1s ease-in-out;
-    margin-left: 30px;
+    margin-left: 80px;
     font-size: max(3vw, 33px);
     font-family: monospace;
     font-weight: 700;
@@ -560,7 +561,7 @@ button:hover {
 .text-content h3,
 h3{
     font-size: max(2vw, 43px);
-    color: var(--topic-color);
+    color:var(--topic-color);
    margin-left: 30px;
    margin-bottom: 40px;
     font-family: monospace;
@@ -720,7 +721,7 @@ h3{
 
 .skills,
 .about, .projects, .contact {
-    box-shadow: 2px 2px 8px;
+    box-shadow: 2px 2px 6px yellow;
     border-radius: 6x;
     align-items: center;
     padding: 70px 0 0;
@@ -1548,7 +1549,7 @@ svg {
     box-shadow: 1px 1px 10px  rgb(133, 122, 236);
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 20px;
     width: 90%;
     background: var(--bg-primary);
     align-items: start;
@@ -1565,21 +1566,21 @@ svg {
     width: 100%;
     font-size: max(1.3vw, 30px);
     margin-top: 0;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     align-items: center;
 }
 
 .top-contact h4 {
     color: var(--text-primary);
-    padding: 20px;
+    padding: 10px;
     font-size: 30px;
 }
 
 .text-contact p {
     width: 100%;
     line-height: 1.4;
-    font-size: 18px;
+    font-size: 17px;
     background: transparent;
     border: none;
     text-align: start;
@@ -1589,7 +1590,7 @@ svg {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin-left: 50px;
+    margin-left: 30px;
 
 }
 
@@ -1663,19 +1664,19 @@ svg {
 .contact-form form {
     display: flex;
     flex-direction: column;
-    margin-left: 30px;
+  
 }
 
 form input,
 textarea {
     border: 1px solid var(--bg-info-col);
-    padding: 13px;
+    padding: 15px;
     border-radius: 5px;
-    margin: 17px;
+    margin: 16px;
     font-size: 17px;
     background: transparent;
     color: var(--text-primary);
-    width: 90%;
+    width: 100%;
 
 }
 
@@ -1982,5 +1983,6 @@ b {
     }
  .imag{
     top: 50px;
+    right: 0;
  }
 }   
