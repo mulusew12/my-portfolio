@@ -87,12 +87,12 @@ h1{
     background: none;
     border: none;
     cursor: pointer;
-    padding: 10px;
+   
     font-size: 1.5rem;
     color: var(--icon-color);
     transition: transform 3s ease;
-    width: 40px;
-    height: 40px;
+   
+   margin-right: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -730,7 +730,12 @@ h3{
   
 
 }
-
+.con{
+  align-items: center;
+  gap: 40px;
+  display: flex;
+  padding: 20px;
+}
 
 .skill h3 {
     color: var(--text-primary);
@@ -979,7 +984,7 @@ background: #068efd;
 .technical,
 .profesional,
 .info,
-.description {
+.description, .text-contact, .contact-form {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -1531,19 +1536,12 @@ svg {
     padding: 70px 0 0;
     justify-content: space-between;
     align-items: center;
-
+   
 
 
 }
 
-.con {
-    gap: 60px;
-    justify-content: space-between;
-    padding: 30px;
-    display: flex;
-    align-items: center;
 
-}
 
 .text-contact {
     border-radius: 20px;
@@ -1574,6 +1572,8 @@ svg {
 
 .top-contact h4 {
     color: var(--text-primary);
+    padding: 20px;
+    font-size: 30px;
 }
 
 .text-contact p {
@@ -1597,7 +1597,7 @@ svg {
     border: 1px solid var(--bg-info-col);
     padding: 5px 15px;
     border-radius: 10px;
-    width: 90%;
+    width: 98%;
     display: flex;
     gap: 40px;
     align-items: center;
@@ -1648,25 +1648,22 @@ svg {
 
 .contact-form {
     border-radius: 20px;
-    border-bottom-right-radius: 50px;
     box-shadow: 1px 1px 10px  rgb(133, 122, 236);
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    width: 90%;
     background: var(--bg-primary);
     align-items: center;
+    width: 90%;
 }
 
 .contact-form h2 {
-    padding: 30px;
+    padding: 10px;
     font-size: 30px;
 }
 .contact-form form {
     display: flex;
-    gap: 20px;
-    padding: 20px;
     flex-direction: column;
+    margin-left: 30px;
 }
 
 form input,
@@ -1674,9 +1671,11 @@ textarea {
     border: 1px solid var(--bg-info-col);
     padding: 13px;
     border-radius: 5px;
+    margin: 17px;
     font-size: 17px;
     background: transparent;
     color: var(--text-primary);
+    width: 90%;
 
 }
 
@@ -1709,15 +1708,7 @@ form input:focus {
     border: none;
 }
 
-.last-text a {
-    color: rgb(253, 15, 15);
-    font-size: 25px;
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    font-size: 17px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+
 
 .success {
     color: green;
@@ -1763,7 +1754,7 @@ b {
 .copy-right {
     margin: 0;
     background: rgb(31, 31, 99);
-    padding: 0;
+    padding: 40px;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -1935,6 +1926,7 @@ b {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        gap: 60px;
     }
     .h-and-r-proj{
         display: flex;
@@ -1956,7 +1948,9 @@ b {
     font-size: 35px;
   }
 
-  
+  .contact-form{
+    padding: 30px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1977,7 +1971,14 @@ b {
         font-size: 30px;
     }
     .wave{
-       margin-top: 10px;
+       margin-top: 50px;
+    }
+    .anim{
+        font-size: 15px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        border: none;
     }
  .imag{
     top: 50px;
