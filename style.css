@@ -721,7 +721,7 @@ h3{
 
 .skills,
 .about, .projects, .contact {
-    box-shadow: 2px 2px 6px yellow;
+    box-shadow: 2px 2px 6px rgb(179, 7, 247);
     border-radius: 6x;
     align-items: center;
     padding: 70px 0 0;
@@ -1590,7 +1590,7 @@ svg {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin-left: 30px;
+    margin-left: 10px;
 
 }
 
@@ -1598,7 +1598,7 @@ svg {
     border: 1px solid var(--bg-info-col);
     padding: 5px 15px;
     border-radius: 10px;
-    width: 98%;
+    width: 100%;
     display: flex;
     gap: 40px;
     align-items: center;
@@ -1664,6 +1664,7 @@ svg {
 .contact-form form {
     display: flex;
     flex-direction: column;
+    width: 100%;
   
 }
 
@@ -1672,7 +1673,7 @@ textarea {
     border: 1px solid var(--bg-info-col);
     padding: 15px;
     border-radius: 5px;
-    margin: 16px;
+    margin-bottom: 16px;
     font-size: 17px;
     background: transparent;
     color: var(--text-primary);
