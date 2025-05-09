@@ -24,7 +24,7 @@ html {
 :root {
     --topic-color: #0A2463;
     --but-color: #800080;
-    --bg-teritary: hwb(60 87% 10%);
+    --bg-teritary: hwb(280 88% 11%);
     --top-color: #800080;
     --bg-primary: #dcdce4;
     --bg-secondary: #f5f5f5;
@@ -40,7 +40,7 @@ html {
 .dark-mode {
     --topic-color: #fa9703;
     --but-color: #03fa10;
-    --bg-teritary: #525151;
+    --bg-teritary: #131212;
     --bg-primary: #121212;
     --bg-secondary: #070707;
     --text-primary: #f0f0f0;
@@ -488,8 +488,8 @@ button:hover {
 }
 
 .home {
-    border-radius: 8px;
-    box-shadow: 1px 2px 6px yellow;
+    border-radius: 50px;
+    border-bottom: 1px solid rgb(211, 4, 252);
     display: flex;
     flex-direction: column;
     padding: 80px 0 0;
@@ -497,6 +497,11 @@ button:hover {
     overflow: hidden;
     position: relative;
     z-index: 1;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    
 }
 
 #cve-btn,
@@ -555,17 +560,17 @@ button:hover {
     font-size: max(3vw, 33px);
     font-family: monospace;
     font-weight: 700;
-    color: var(--topic-color);
+    color:var(--topic-color);
 }
 
 .text-content h3,
 h3{
     font-size: max(2vw, 43px);
-    color:var(--topic-color);
+    color:var(--text-primary);
    margin-left: 30px;
    margin-bottom: 40px;
-    font-family: monospace;
-    font-weight: bold;
+    font-family: sans-serif;
+    font-weight: 700;
     display: flex;
     animation: to-right 3s ease-in-out;
 
@@ -576,6 +581,7 @@ h3{
     display: flex;
     flex-direction: column;
     line-height: 2;
+  
 
 }
 @keyframes to-right {
@@ -655,17 +661,17 @@ h3{
     display: flex;
     flex-direction: column;
     overflow-y: hidden;
-    height: 440px;
+    height: 410px;
 }
 
 .read-more{
     position: absolute;
-    top: 380px;
+    top: 370px;
     background: white;
     padding: 10px 20px;
     border: none;
     font-size: 15px;
-    box-shadow: 2px 2px 30px 30px;
+    box-shadow: 2px 2px 10px 10px;
     cursor: pointer;
     border-radius: 20px;
 }
@@ -721,13 +727,14 @@ h3{
 
 .skills,
 .about, .projects, .contact {
-    box-shadow: 2px 2px 6px rgb(179, 7, 247);
-    border-radius: 6x;
+
+    border-radius: 30px;
     align-items: center;
     padding: 70px 0 0;
+    border-bottom: 1px solid rgb(211, 4, 252);
     width: 100%;
     justify-content: center;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
   
 
 }
@@ -756,11 +763,13 @@ h3{
     flex-direction: column;
     text-align: center;
     align-items: center;
-    background-color: var(--bg-teritary);
+    background: var(--bg-teritary);
     border-radius: 20px;
     padding: 10px;
     animation: in 2.5s ease;
     transition: all 2s;
+    margin: 60px;
+   box-shadow: 3px 6px 6px rgb(199, 2, 179);
 }
 
 .t button:hover {
@@ -797,10 +806,13 @@ background: #068efd;
     text-align: center;
     align-items: center;
     background-color: var(--bg-teritary);
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 20px;
     animation: in 2.5s ease;
     transition: all 2s;
+    margin: 60px;
+
+    box-shadow: 3px 6px 6px rgb(199, 2, 179);
 
 }
 
@@ -991,7 +1003,7 @@ background: #068efd;
     height: 100%;
     width: 100%;
     margin-top: 20px;
-    padding: 30px;
+    padding: 10px;
     border-radius: 10px;
     gap: 50px;
 }
@@ -1002,7 +1014,7 @@ background: #068efd;
     background-color: #f0f0f0;
     border-radius: 15px;
     overflow: hidden;
-    margin: 5px 0;
+    margin: 5px 30px 40px;
 
 }
 
@@ -1035,7 +1047,6 @@ background: #068efd;
     width: 0;
     background: linear-gradient(rgb(238, 118, 238), purple);
     border-radius: 15px;
-
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -1333,13 +1344,14 @@ svg {
 .projects h1 {
     font-size: 50px;
     text-align: center;
+    
 }
 
 .project-container {
     display: flex;
     justify-content: space-around;
     padding: 30px;
-    gap: 15px;
+    gap: 30px;
 }
 .project {
     align-items: center;
@@ -1356,7 +1368,7 @@ svg {
     transition: 0.6s;
 }
 .project-description {
-    width: 30%;
+   
     text-align: center;
     align-items: center;
 
@@ -1364,19 +1376,19 @@ svg {
 
 .project img {
     margin-top: 20px;
-    width: 100px;
-    height: 100px;
+    width: 300px;
+    height: 200px;
     border-radius: 50px;
 
 }
 
 .proj-description h3 {
     color: var(--text-primary);
-    padding: 10px;
-    margin-left: 35px;
+
+   
     font-size: max(2vw, 30px);
-    text-decoration: none;
-    text-align: start;
+  
+   
 
 }
 .proj-text .proj-btn {
@@ -1590,7 +1602,7 @@ svg {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin-left: 10px;
+  
 
 }
 
@@ -1648,17 +1660,16 @@ svg {
 }
 
 .contact-form {
-    border-radius: 20px;
-    box-shadow: 1px 1px 10px  rgb(133, 122, 236);
+ 
+    box-shadow: 1px 1px 6px  rgb(133, 122, 236);
     display: flex;
     flex-direction: column;
-    background: var(--bg-primary);
     align-items: center;
-    width: 90%;
+    width: 100%;
 }
 
 .contact-form h2 {
-    padding: 10px;
+    padding: 5px;
     font-size: 30px;
 }
 .contact-form form {
@@ -1671,17 +1682,19 @@ svg {
 form input,
 textarea {
     border: 1px solid var(--bg-info-col);
-    padding: 15px;
+     padding: 15px;
+   position: relative;
     border-radius: 5px;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
     font-size: 17px;
     background: transparent;
     color: var(--text-primary);
     width: 100%;
+    background: transparent;
 
 }
 
-form input:focus {
+form input:focus, textarea:focus {
     outline: 1px solid rgb(0, 89, 255);
 }
 
@@ -1693,7 +1706,7 @@ form input:focus {
     border-radius: 10px;
     cursor: pointer;
     border: none;
-    width: 70%;
+    width: 90%;
     place-self: center;
 }
 
@@ -1810,11 +1823,14 @@ b {
         display: flex;
         flex-direction: column;
         margin: 0;
+       
     }
     .text-content p{
+        border-radius: 11px;
         display: flex;
-        width: 100%;
+        margin: 2%;
         text-align: start;
+       
     }
     .text-content h1,
     .text-content h3,
@@ -1953,10 +1969,26 @@ b {
   .contact-form{
     padding: 30px;
   }
+.html, .tech{
+    margin: 60px 10px;
+}
 }
 
 @media (max-width: 768px) {
+    .text-contact{
+        width: 100%;
+    }
+    .info-container{
+        width: 100%;
+        margin: 0;
+        
+    }
+    .info-container i{
+       font-size: 16px;
+       padding: 0;
+    }
     .y {
+        
         width: 100%;
         align-items: center;
         justify-content: center;
