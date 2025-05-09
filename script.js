@@ -28,7 +28,8 @@ document.getElementById('read-more').addEventListener('click', function (e) {
  e.preventDefault()
     if (   this.innerHTML == 'Read more') {
     this.innerHTML = 'Read less'
-      this.style.top = '84%'
+      this.style.top = '88%'
+      this.style.left = '8%'
     document.getElementById('about-para').style.height = 'auto'
   } else{
       this.innerHTML = 'Read more'
@@ -62,21 +63,8 @@ document.getElementById('send').addEventListener('click', function (e) {
             document.getElementById('send').textContent = 'Submit'
             newElement.style.display = 'none'
             input1.forEach(input => {
-              
-                saveBtn.classList.add('save')
-                saveBtn.innerHTML = 'Save'
-                saveBtn.id = 'ss'
-                document.getElementById('ss').addEventListener('click', function () {
-                  document.getElementById('ss').innerHTML ='saved';
-                  const newPara = document.createElement('p')
-              
-                  newPara.classList.add('parag')
-                   newPara.innerHTML =`<b>Name</b> ${names.value} <button class ="sb" id ="sb">X</button> <br> <b>Email</b>
-                    ${email.value} <button class ="sb" id ="sb">X</button> <br> <b>Phone</b> ${phone.value} <button class ="sb" id ="sb">X</button>`;
-                   document.body.appendChild(newPara)
-                 
-                
-                })
+               input.value = ''
+            
             })
 
 
@@ -89,7 +77,7 @@ document.getElementById('send').addEventListener('click', function (e) {
     }, 3500)
 
     document.body.appendChild(newElement)
-    document.body.appendChild(saveBtn)
+   
    
 
 })
